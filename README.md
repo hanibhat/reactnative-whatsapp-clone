@@ -17,7 +17,7 @@ First of all, make sure you have the following installed in your dev enviornment
 
 Follow the steps below to install and run the project on your device:
 
-- Clone this repository `git clone https://github.com/hanibhat/reactnative-whatsapp-clone.git`.
+- Clone this repository by running `git clone https://github.com/hanibhat/reactnative-whatsapp-clone.git`.
 - Open a terminal at the root directory.
 - Run `yarn install` to install dependencies.
 - Run `yarn start` to build the app and launch the devtools.
