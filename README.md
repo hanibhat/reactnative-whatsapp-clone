@@ -27,3 +27,5 @@ Follow the steps below to install and run the project on your device:
 ## Built With
 
 - [React Native](https://reactnative.dev/)
+- [NativeBase](https://docs.nativebase.io/)
+- [Moment.js](https://momentjs.com/)
