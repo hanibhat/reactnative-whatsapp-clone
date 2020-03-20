@@ -4,7 +4,7 @@ import { ScrollableTab, Text, Tab, Tabs, Icon, TabHeading } from "native-base";
 import Chats from "./Chats";
 import Status from "./Status";
 import Calls from "./Calls";
-import { ThemeColors } from "../../ThemeColors";
+import ThemeColors from "../constants/ThemeColors";
 
 interface ChatModel {
   contactName: string;
@@ -29,12 +29,21 @@ export default class MyTabs extends React.Component {
   state = {
     chats: this.getChats(),
     statusItems: this.getStatusItems(),
-    calls: this.getCalls()
+    calls: this.getCalls(),
+    user: {
+      avatar:
+        "https://raw.githubusercontent.com/ionic-team/ionic-docs/master/src/demos/api/list/avatar-yoda.png"
+    }
   };
 
   render() {
     return (
-      <Tabs initialPage={1} renderTabBar={() => <ScrollableTab />}>
+      <Tabs
+        initialPage={1}
+        renderTabBar={() => (
+          <ScrollableTab style={{ backgroundColor: ThemeColors.primary }} />
+        )}
+      >
         <Tab
           heading={
             <TabHeading style={styles.tabStyle}>
@@ -60,7 +69,7 @@ export default class MyTabs extends React.Component {
           activeTextStyle={styles.activeTabText}
           heading="status"
         >
-          <Status statusItems={this.state.statusItems} />
+          <Status statusItems={this.state.statusItems} user={this.state.user} />
         </Tab>
         <Tab
           tabStyle={styles.tabStyle}

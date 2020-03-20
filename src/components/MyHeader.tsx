@@ -1,7 +1,7 @@
 import React from "react";
 import { StyleSheet } from "react-native";
 import { Header, Body, Right, Button, Icon, Title } from "native-base";
-import { ThemeColors } from "../../ThemeColors";
+import ThemeColors from "../constants/ThemeColors";
 
 export default class MyHeader extends React.Component {
   render() {

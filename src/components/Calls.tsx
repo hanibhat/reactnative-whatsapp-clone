@@ -14,7 +14,7 @@ import {
   Fab
 } from "native-base";
 import Moment from "moment";
-import { ThemeColors } from "../../ThemeColors";
+import ThemeColors from "../constants/ThemeColors";
 
 export default class Calls extends Component {
   render() {

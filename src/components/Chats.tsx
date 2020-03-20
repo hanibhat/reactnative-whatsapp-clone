@@ -13,7 +13,7 @@ import {
   Fab
 } from "native-base";
 import Moment from "moment";
-import { ThemeColors } from "../../ThemeColors";
+import ThemeColors from "../constants/ThemeColors";
 
 export default class Chats extends Component {
   render() {
@@ -39,7 +39,7 @@ export default class Chats extends Component {
             </ListItem>
           )}
         />
-        <Fab style={styles.fab} containerStyle={{}} position="bottomRight">
+        <Fab style={styles.fab} position="bottomRight">
           <Icon name="md-text" />
         </Fab>
       </Container>

@@ -13,22 +13,15 @@ import {
   Button
 } from "native-base";
 import Moment from "moment";
-import { ThemeColors } from "../../ThemeColors";
+import ThemeColors from "../constants/ThemeColors";
 
 export default class Status extends Component {
-  state = {
-    user: {
-      avatar:
-        "https://raw.githubusercontent.com/ionic-team/ionic-docs/master/src/demos/api/list/avatar-yoda.png"
-    }
-  };
-
   render() {
     return (
       <Container>
         <ListItem avatar noBorder>
           <Left>
-            <Thumbnail source={{ uri: this.state.user.avatar }} />
+            <Thumbnail source={{ uri: this.props.user.avatar }} />
           </Left>
           <Body>
             <Text>My status</Text>
@@ -63,7 +56,7 @@ export default class Status extends Component {
           direction="up"
           position="bottomRight"
         >
-          <Icon name="share" />
+          <Icon name="camera" />
           <Button style={{ backgroundColor: "lightgrey" }}>
             <Icon
               style={{ color: ThemeColors.primary }}
