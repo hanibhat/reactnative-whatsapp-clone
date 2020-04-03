@@ -8,7 +8,7 @@ This React Native project is built with Expo. So make sure the prerequisites are
 
 ### Prerequisites
 
-First of all, make sure you have the following installed in your dev enviornment:
+First of all, make sure you have the following installed in your dev environment:
 
 - [Node.js](https://nodejs.org/en/)
 - [Expo CLI](https://reactnative.dev/docs/getting-started)
